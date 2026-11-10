@@ -22,6 +22,7 @@ from api.views import *
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('image', add_image_meta, name="add-image"),
+    path('images', get_image_meta),
     path('images/', get_image_meta, name="get-image")
 
 ]
